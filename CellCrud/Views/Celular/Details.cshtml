@@ -1,0 +1,58 @@
+﻿@model CellCrud.Models.Celular
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Celular</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MarcaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarcaID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OSID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OSID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Operadora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Operadora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CelularID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
